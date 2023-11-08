@@ -4,3 +4,4 @@
 /Terraform/*terraform.tfstate.backup
 /Terraform/*terraform.tfstate
 /Terraform/terraform.tfvars.json
+/ansible/hosts
