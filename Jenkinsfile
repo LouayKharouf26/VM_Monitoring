@@ -14,7 +14,7 @@ pipeline{
                     echo "======== executing ========"
                         sh "pwd"
                         sh "terraform init"
-                        sh "terraform apply --auto-approve --var-file=./terraform.tfvars.json"
+                        sh "terraform apply --auto-approve --var-file=/var/jenkins_home/workspace/VM-Monitoring/Terraform/terraform.tfvars.json"
                          }            
                         }
                     } 
