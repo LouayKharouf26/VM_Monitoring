@@ -10,7 +10,7 @@
     ansible_ssh_pass: "PassStudent123"
   tasks: 
   - name: trigger the API
-    shell: az vm show -d -g VirtualMachine -n {{ vm_name }} --query publicIps -o tsv
+    shell: az vm show -d -g VirtualMachine1 -n {{ vm_name }} --query publicIps -o tsv
     register: publicIP
   - name: update the host file
     lineinfile: 
