@@ -15,7 +15,7 @@ pipeline{
                     dir ("Terraform") {
                         sh "pwd"
                         sh "az upgrade --yes"
-                        sh "az login"*/
+                        sh "az login"
                             }    }        
                         }
                     } 
