@@ -40,7 +40,7 @@ pipeline{
                         sh "pwd"
                         sh "ansible-playbook  update-hosts.yml"
                         sh "ansible-playbook -i hosts install_prometheus.yml"
-                       // sh "ansible-playbook -i hosts install_grafana.yml"
+                        sh "ansible-playbook -i hosts install_grafana.yml"
                          }         }   
                         }
                     } 
