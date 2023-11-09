@@ -8,6 +8,17 @@ pipeline{
                 sh "ls -ltr"
             }
         }
+               stage("az login") {
+            steps {                
+                script {
+                    echo "======== executing ========"
+                    dir ("Terraform") {
+                        sh "pwd"
+                        sh "az upgrade --yes"
+                        sh "az login"*/
+                            }    }        
+                        }
+                    } 
        stage("Create the VM") {
             steps {                
                 script {
