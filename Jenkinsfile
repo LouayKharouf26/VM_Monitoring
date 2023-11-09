@@ -44,6 +44,16 @@ pipeline{
                          }         }   
                         }
                     } 
+                        stage("grafana playbook") {
+            steps {                
+                script {
+                    echo "======== executing ========"
+                    dir ("ansible") {
+                        sh "pwd"
+                        sh "ansible-playbook -i hosts install_grafana.yml"
+                         }         }   
+                        }
+                    } 
                 }
             post{
                 success{
