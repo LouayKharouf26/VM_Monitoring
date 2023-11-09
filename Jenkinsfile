@@ -8,7 +8,7 @@ pipeline{
                 sh "ls -ltr"
             }
         }
-      /* stage("Create the VM") {
+       stage("Create the VM") {
             steps {                
                 script {
                     echo "======== executing ========"
@@ -18,7 +18,7 @@ pipeline{
                         sh "terraform apply --auto-approve --var-file=/var/jenkins_home/workspace/VM-Monitoring/Terraform/terraform.tfvars.json"
                          }    }        
                         }
-                    } */
+                    } 
                 stage("Ansible Playbooks") {
             steps {                
                 script {
